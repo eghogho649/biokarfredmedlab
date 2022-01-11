@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+header{ z-index: 1;
+  text-align: center;
+  position: fixed;
+  font-size: large;
+  background-color: white;
+      width: 100%;
+      height: 80px;
+      top: 0;
+      overflow: visible;
+}
+    @media only screen and (max-width: 768px) {header{
+      width: 100%;
+      position: fixed;
+      height: 115px;
+      top: 0;
+    } }
+    @media only screen and (max-width: 500px) {header{
+      font-size: 14px;
+    }}
+    
+   /* Style the navigation bar */
+.topnav {
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  background-color: cornflowerblue;
+  overflow:visible;
+  top: 80px;
+  height: 44px;
+}
+@media only screen and ( max-width: 768px ) {
+  .topnav{
+    overflow: hidden;
+    height: 180px;
+    top: 115px;
+
+  }
+}
+@media only screen and (max-width: 500px) {.topnav{
+  top: 95px;
+}
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.topnav a:hover {
+  background-color: rgba(55, 125, 190, 0.952);
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #ddd;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 768 pixels */
+@media screen and (max-width: 768px) {
+  .topnav a {
+    float: none;
+    display: block;
+  }
+}
+        form{
+            background-position: left;
+            padding: 10px;
+            padding-bottom: 50px;
+            background-color: cornflowerblue;
+            position: absolute;
+            height: 450px;
+            width: 450px;
+            border: cornflowerblue;
+            align-content: center;
+            top: 35%;
+            color: black;
+            align-content: center;
+        }
+        @media only screen and (max-width: 768px) { form { padding: 10px;
+              padding-bottom: 25px;
+              background-color: cornflowerblue;
+              position: absolute;
+              height:400px;
+              width:450px;
+              border: cornflowerblue;
+              margin-top: 30%;
+              margin-left: auto;
+              margin-right: auto;
+  }
+}
+
+  input[type=text] {
+    width: 200px;
+    padding: 12px;
+    border: 1px solid rgb(19, 117, 146);
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+
+  input[type= tel] {
+      width: 200px;
+      padding: 12px;
+
+  }
+  input[type=email] {
+    width: 200px;
+    padding: 12px;
+  }
+  input[type=submit]{
+    margin-top: 50%;
+    padding-bottom: 100%;
+    padding: 12px;
+  }
+  @media screen and (max-width: 768px){
+    input[type=submit]{
+margin-top: 30%;
+left: 50px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    input[type=submit]{
+      margin-right: auto;
+      margin-left: auto;
+
+  }
+  #department{
+    width: 200px;
+    padding: 12px;
+  }
+  body{
+    background-position: center;
+    }
+    @media only screen and ( max-width: 768px ) {
+      body{
+        font-size: 14px;
+        
+      }
+    }
+  
+    span {
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    padding-inline: 5px;
+    margin-left: 50%;
+  }  
+  @media only screen and ( max-width: 768px ) {
+    span{
+      margin-left: 20%;
+
+    }
+  }
+  ul a{color: black;
+  padding: 10px;
+  text-decoration: none;
+bottom: 0;}
+@media only screen and ( max-width: 768px ) {
+ul a{ padding: 3px;
+}}
+ul a:hover{color: rgba(55, 125, 190, 0.952);}
+  /*footer style */
+  footer {margin: auto;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+   color: black;
+   padding-top: 60%;
+  }
+  @media only screen and ( max-width: 768px ) {
+    footer{
+      padding-top: 180%;
+      padding-right: 5px;
+    
+    }
+  }
+ 
+</style>
+
+<div class="parent-container">
+  <header>
+    <h1 style="height: 70px;">Biokarfred Medical Laboratory Services</h1>
+  </header> 
+  <div class="topnav" id="myTopNav" >
+      
+    <a   class="active" href="navigation.html"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a  href="start.html"><i class="fa fa-fw fa-user"></i>About US</a>
+    <a  href="namesless.html"><i class="fa fa-hospital-o"></i>Medical services</a>
+    <a  href="appointment.html"><i class="fa fa-calendar" aria-hidden="true"></i>Book an appointment</a>
+  </div>
+<script>
+  
+</script>
+      <div style="display:inline; padding-bottom: 50px; " class="form-id" >
+        <form action="" onSubmit="return confirm('Do you want to submit?') ">
+        <div style="float:left;">
+    <label for="fname"><p>First Name<strong style="color: crimson;">*</strong></p></label>
+    <input type="text" id= "fname" name="Firstname" placeholder="Your first name..." required>
+    </div>
+    <div style="float: right;">
+    <label for="lname"><p>Last Name<strong style="color: crimson;">*</strong></p></label>
+    <input type="text" id="lname" name="Lastname" placeholder="Your last name..." required >
+    </div>
+    <div style="float: left;">
+    <label for="phone"><p>Your Phone Number<strong style="color: crimson;">*</strong></p></label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="+(234) 90- 700- 0000- 00..." required>
+    </div>
+    <div style="float: right;">
+    <label for="appointmentdate"><p>Select date<strong style="color: crimson;">*</strong></p></label>
+    <input type="date" id="appointmentdate" required>
+    </div>
+    <div style="float: right; margin-top: 20px;">
+     <label for="email"><p>Email<strong style="color: crimson;">*</strong></p></label>
+      <input type="email" id="email" name="email" placeholder="Email..." required>
+    </div>
+    <div style="float: left;">
+     <label for="department"><p>Departments<strong style="color: crimson;">*</strong></p></label>
+      <select name="departments" id="department" size="4" required>
+        <option value="chemistry">Chemistry</option>
+        <option value="Parasitology">Parasitology</option>
+        <option value="Heamatology">Heamatology/Serology</option>
+        <option value="microscopy">Microscopy</option>
+      </select>
+    </div>
+      <div style="float: left; padding-top: 5%;" >
+        <input type="submit" value="Book Appointment"  onclick="submitbutton()"/>
+      </div>
+    </form>
+  </div>
+
+  
+  
+</body>
+<script>
+  function submitbutton(){
+    var isValidated=true;
+  if (document.getElementById('fname').value == 0){
+    document.getElementById("fname").style.border = "1px solid red";
+    isValidated= false;
+    }
+    else{
+document.getElementById("fname").style.border="1px solid green";
+isValidated=true;
+}
+if (document.getElementById('lname').value == 0){
+    document.getElementById("lname").style.border = "1px solid red";
+    isValidated= false;
+    }
+    else{
+document.getElementById("lname").style.border="1px solid green";
+isValidated=true;
+}
+   }
+    const email = document.getElementById('email');
+    if(emailValue === "") {
+      setErrorFor(email, "Email cannot be blank");
+    }
+      else if (!isEmail(emailValue)) {
+        setErrorFor(email, " Not a valid Email");
+            } else{
+              setSuccessFor(email);
+    }
+    /* to validate the email*/
+    function isEmail(email) {
+      return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
+    }
+  </script>
+</br>
+<footer>
+  <ul>
+    <a style='list-style-type: none;' href="#">Privacy</a>
+    <a style='list-style-type: none;' href="#">Terms</a>
+    <a style='list-style-type: none;' href="#">Contact</a>
+  </ul>
+  <span> 2021, © Biokarfred Med Lab</span>
+  
+</footer>
+</div>
+</html>
