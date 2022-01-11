@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about-us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <style>
+        * {
+    box-sizing: border-box;
+  }
+    
+  header{
+        text-align: center;
+        position: fixed;
+        font-size: large;
+        background-color: white;
+        width: 100%;
+        height: 80px;
+        top: 0px;
+    }
+    
+    @media only screen and (max-width: 768px) {header{
+      width: 100%;
+      position: fixed;
+      height: 115px;
+      top: 0;
+    } }
+/* Style the navigation bar */
+.topnav {
+  width: 100%;
+  position: fixed;
+  background-color: cornflowerblue;
+  overflow:visible;
+  top: 80px;
+  height: 44px;
+}
+@media only screen and ( max-width: 768px ) {
+  .topnav{
+    overflow: visible;
+    height: 174px;
+    top: 115px;
+
+  }
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.topnav a:hover {
+  background-color: rgba(55, 125, 190, 0.952);
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #ddd;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 768 pixels */
+@media screen and (max-width: 768px) {
+  .topnav a {
+    float: none;
+    display: block;
+  }
+}
+.contact-info{
+  padding-top: 10%;
+}
+  .lab-info{
+    padding-top: 11%;
+  }
+  @media screen and (max-width: 768px) {
+    .lab-info{
+      margin-top: 53%;
+    }
+  }
+  body{
+      background-image: url(doctor3_original_55272.jpg);
+      background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    background-size: 900px 400px;
+    float: top;
+  }
+  @media only screen and ( max-width: 768px ) {
+  body{
+    float: bottom;
+    background-position: bottom;
+        font-size: 14px;
+  }
+}
+span {
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    padding-inline: 5px;
+    margin-left: 50%;
+  }  
+  @media only screen and ( max-width: 768px ) {
+    span{
+      margin-left: 20%;
+
+    }
+  }
+  ul a{color: black;
+  padding: 10px;
+  text-decoration: none;
+bottom: 0;}
+@media only screen and ( max-width: 768px ) {
+ul a{ padding: 3px;
+}}
+ul a:hover{color: rgba(55, 125, 190, 0.952);}
+  
+  footer {margin: auto;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+   color: black;
+}
+footer a{
+  bottom: 0;
+}
+  
+  
+    </style>
+    <div class="parent-container">
+    <header>
+        <h1 style="height: 70px;">Biokarfred Medical Laboratory Services</h1>
+    </header>
+    <div class="topnav" id="myTopNav" >
+      
+      <a   class="active" href="navigation.html"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a  href="start.html"><i class="fa fa-fw fa-user"></i>About US</a>
+      <a  href="namesless.html"><i class="fa fa-hospital-o"></i>Medical services</a>
+      <a  href="appointment.html"><i class="fa fa-calendar" aria-hidden="true"></i>Book an appointment</a>
+    </div>
+    
+    <div class="lab-info">
+      <h2>ABOUT US</h2>
+      <p>Biokarfred medical laboratory provides basic medical laboratory investigations for:</p>
+      <p>1. Private and public hospitals.</p>
+      <p>2. Private patients.</p>
+      <p>We also participate in NGOs programmes such as Tuberculosis eradication, HIV and Malaria awareness campaign.</p>
+      <p> And we partake in MLSC quality control programme.</p>
+    </div>
+    
+    <div class="contact-info">
+      <address> <h3>You can contact us via:</h3>
+        <b>Our Email:</b> biokarfredmedlab@gmail.com 
+      </br>
+      <b>Visit us @</b> No 1 Madaki Street, Opp. Kaduna Polytechnic, Sabon-Tasha, Kaduna.
+    </address>
+    <a href="tel:+2348136471559">You can call us at: +234-813-6471-559</a>
+    
+    
+  </div>
+  
+</body>
+<footer>
+  <ul>
+    <a style='list-style-type: none;' href="#">Privacy</a>
+    <a style='list-style-type: none;' href="#">Terms</a>
+    <a style='list-style-type: none;' href="#">Contact</a>
+  </ul>
+  <span> 2021, © Biokarfred Med Lab</span>
+  
+</footer>
+</div>    
+</html>

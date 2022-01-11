@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <style>
+        * {
+    box-sizing: border-box;
+  }
+  header{
+        text-align: center;
+        position: fixed;
+        font-size: large;
+        background-color: white;
+        width: 100%;
+        height: 80px;
+        top: 0px;
+    }
+    
+    @media only screen and (max-width: 768px) {header{
+      width: 100%;
+      position: fixed;
+      height: 50px;
+      top: 0;
+    } }
+/* Style the navigation bar */
+.topnav {
+  width: 100%;
+  position: fixed;
+  background-color: cornflowerblue;
+  overflow:visible;
+  top: 80px;
+  height: 44px;
+}
+@media only screen and ( max-width: 768px ) {
+  .topnav{
+    overflow: hidden;
+    height: 132px;
+    top: 115px;
+
+  }
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links hover */
+.topnav a:hover {
+  background-color: rgba(55, 125, 190, 0.952);
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: white;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 768 pixels */
+@media screen and (max-width: 768px) {
+  .topnav a {
+    float: none;
+    display: block;
+  }
+}
+body{
+      background-image: url(Black-doctor-patient.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: bottom;
+  }
+  @media only screen and ( max-width: 768px ) {
+    body{
+      background-position: bottom;
+      background-attachment: scroll;
+      font-size: 14px;
+    }
+  }
+  .parent-container{
+    flex-wrap: wrap;
+  }
+  .services-col{
+    padding-top: 15%;
+    width: 50%;
+  }
+  @media screen and (max-width: 768px) {.services-col{
+    padding-top: 55%;
+    width: 100%;
+  } }
+  .parent-test{
+    display: flex;
+    flex-direction: row;
+    top: 50px;
+    margin: 10px;
+    margin-top: 30px;
+
+  }
+ .test-ha{
+   border: 1px solid cornflowerblue;
+   border-width: 1px 0 0 1px;
+   width: 240px;
+   height: 332px;
+ }
+ @media only screen and ( max-width: 768px ) {
+   .test-ha{
+    width: 240px;
+   height: 353px;
+   }
+  }
+  .test-ch{
+    border: 1px solid cornflowerblue;
+    width: fit-content;
+    float: right;
+    align-self: center;
+    height: 500px;
+    margin-top: 0;
+
+  }
+ .test-mp{
+   border: 1px solid cornflowerblue;
+   width: 241px;
+   margin-left: 10px;
+   margin-top: -178px; 
+ }
+ @media only screen and ( max-width: 768px ) {
+   .test-mp{
+     width:241px;
+    margin-left: 10px;
+   margin-top: -159px;
+   }
+ }
+    span {
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    padding-inline: 5px;
+    margin-left: 50%;
+  }  
+  @media only screen and ( max-width: 768px ) {
+    span{
+      margin-left: 20%;
+
+    }
+  }
+  
+  ul a{color: black;
+  padding: 10px;
+bottom: 0;}
+@media only screen and ( max-width: 768px ) {
+ul a{ padding: 3px;
+  text-decoration: none;
+}}
+ul a:hover{color: rgba(55, 125, 190, 0.952);;}
+  
+  footer {margin: auto;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+   color: black;
+}
+footer a{
+  bottom: 0;
+}
+    </style>
+    <div class="parent-container">
+    <header>
+        <h1 style="height: 70px;">Biokarfred Medical Laboratory Services</h1>
+    </header>    
+    <div class="topnav" id="myTopNav" >
+      
+      <a   class="active" href="navigation.html"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a  href="start.html"><i class="fa fa-fw fa-user"></i>About US</a>
+      <a  href="namesless.html"><i class="fa fa-hospital-o"></i>Medical services</a>
+      <a  href="appointment.html"><i class="fa fa-calendar" aria-hidden="true"></i>Book an appointment</a>
+    </div>
+          
+
+          <div class="services-col">
+            <h3>We offer the following services:</h3>
+            <p>consultation</p>
+            <p>Diagonsis</p>
+            <p>Prescription of drugs based on test results</p>
+            </div>
+
+            
+            <h3 style="text-align: center;">HERE ARE SOME OF THE TESTS WE CARRY OUT </h3>   
+            <div class="parent-test">
+            <div class="test-ha" id=""><h4>HAEMATOLOGY</h4>
+              <ul> 
+                <li>HCV/HB</li>
+                <li>FBC</li>
+                <li>ESR</li>
+                <li>Blood Group</li>
+                <li>Genotype</li>
+                <li>VDRL</li>
+                <li>HIV</li>
+                <li>Hepatitis B Antien</li>
+                <li>Hepatitis C Antigen</li>
+                <li>Pltelets Counts</li>
+                <li>Bleeding/Clothung Time</li>
+                <li>Xmatching</li>
+                <li>Malaria Parasite</li>
+                <li>Microfilaria</li>
+              </ul>
+            </div>
+            <div class="test-ch">
+              <h4>CHEM PATH</h4>
+              <ul>
+                <li>Blood Sugar</li>
+                <li>Liver Function Test</li>
+                <li>Electrolyte</li>
+                <li>Urea/Creatinine</li>
+                <li>Lipid Profile</li>
+                <li>Pregnancy Test</li>
+                <li>Cholesterol</li>
+                <li>Triglycerides</li>
+                <li>HDL</li>
+                <li>LDL</li>
+                <li>Prostate Specific Antigen(PSA)</li>
+                <li>Uric Acid</li>
+                <li>H.Pylori</li>
+                <li>Calcium (Ca++)</li>
+                <li>&alpha;-Feto protein </li>
+                <li>TOtal Proteins</li>
+                <li>Albumin</li>
+                <li>Glucose TOlerance Test (GTT)</li>
+                <li>Rheumatoid Factor</li>
+              </ul>
+            </div>
+          </div>
+            <div class="test-mp" id="">
+              <ul>
+                <h4>MICRO/PARASITOLOGY</h4>
+                <li>Urinanalysis</li>
+                <li>Microscopy</li>
+                <li>StoolMicroscopy</li>
+                <li>Culture/Sensitivity</li>
+                <li>WIDAL Test(Typhoid Test)</li>
+              </ul>
+            </div>
+          </body>
+          
+        </br>
+        <footer>
+          <ul>
+            <a style='list-style-type: none;' href="#">Privacy</a>
+            <a style='list-style-type: none;' href="#">Terms</a>
+            <a style='list-style-type: none;' href="#">Contact</a>
+          </ul>
+          <span> 2021, © Biokarfred Med Lab</span>
+          
+        </footer>
+      </div>
+</html>
